@@ -1,0 +1,1 @@
+hola borolas {$nombre}  {$apellido}

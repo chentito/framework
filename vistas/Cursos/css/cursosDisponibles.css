@@ -1,0 +1,32 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 9/08/2017, 12:52:49 PM
+    Author     : Carlos
+*/
+
+#registro_altaCursos_form label.error {
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+    color: red;
+}
+
+#editarCursos_form label.error {
+    margin-left: 10px;
+    width: auto;
+    display: inline;
+    color: red;
+}
+
+td.details-control {
+    background: url('/assets/images/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+
+tr.shown td.details-control {
+    background: url('/assets/images/details_close.png') no-repeat center center;
+}

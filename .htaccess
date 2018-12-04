@@ -1,0 +1,11 @@
+Options -Indexes
+
+RewriteEngine On
+ErrorDocument 404 /index.html
+
+RewriteCond %{REQUEST_URI} !^/assets/.*$ [NC]
+RewriteCond %{REQUEST_URI} !^/database/.*$ [NC]
+RewriteRule ^([^/]+)/$ "/index.php?controlador=$1" [L,NC,QSA]
+RewriteRule ^([^/]+)/([^/]+)/$ "/index.php?controlador=$1&accion=$2" [L,NC,QSA]
+RewriteRule ^([^/]+)/([^/]+)/([^/]+)/$ "/index.php?controlador=$1&accion=$2&qstring=$3" [NC,L,QSA]
+#RewriteRule ^([^/]+)/([^/]+)/([^/]+)$ "/index.php?controlador=$1&accion=$2&qstring=$3" [NC,L,QSA]
